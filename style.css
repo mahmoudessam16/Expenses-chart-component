@@ -1,0 +1,124 @@
+body {
+  background-color: hsl(27, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body .component {
+  margin-top: 40px;
+  width: 400px;
+}
+body .component .balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(10, 79%, 65%);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+body .component .balance .info p {
+  margin: 0 0 8px 0;
+  color: #ddd;
+  font-size: 14px;
+}
+body .component .balance .info span {
+  color: white;
+  font-size: 25px;
+}
+body .component .balance img {
+  width: 45px;
+}
+body .component .spending {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px 20px 35px 20px;
+  margin-top: 16px;
+}
+body .component .spending h2 {
+  margin: 0 0 10px 0;
+  color: #111010;
+}
+body .component .spending .charts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 150px;
+  margin-top: 35px;
+}
+body .component .spending .charts .chart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .component .spending .charts .chart .progress {
+  display: block;
+  width: 40px;
+  height: 100px;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body .component .spending .charts .chart .progress:hover {
+  background-color: hsla(10, 79%, 65%, 0.6);
+}
+body .component .spending .charts .chart .quantity {
+  background-color: black;
+  color: #fff;
+  padding: 7px 14px;
+  font-size: small;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+body .component .spending .charts .chart .day {
+  color: #aaa;
+  font-size: 14px;
+  padding-top: 6px;
+}
+body .component .spending .line {
+  display: block;
+  width: calc(100% - 14px);
+  height: 2px;
+  background-color: #eee;
+  margin: 20px 0 20px 7px;
+}
+body .component .spending .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+body .component .spending .total .left-side,
+body .component .spending .total .right-side {
+  display: flex;
+  flex-direction: column;
+}
+body .component .spending .total .left-side .title,
+body .component .spending .total .right-side .title {
+  color: #888;
+  font-size: 14px;
+}
+body .component .spending .total .right-side .percentage {
+  text-align: right;
+  font-weight: 700;
+  font-size: 14px;
+}
+body .component .spending .total .left-side .money {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: -9px;
+}
+
+@media (max-width: 400px) {
+  .component {
+    width: 320px !important;
+    margin: 30px 10px;
+  }
+  .component .spending .charts .chart .progress {
+    width: 25px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
