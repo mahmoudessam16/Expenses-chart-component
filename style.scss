@@ -45,17 +45,18 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
-                height: 150px;
+                height: 200px;
                 margin-top: 35px;
                 .chart {
                     position: relative;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    justify-content: end;
+                    height: 200px;
                     .progress {
                         display: block;
-                        width: 40px;
-                        height: 100px;
+                        width: 38px;
                         background-color: hsl(10, 79%, 65%);
                         border-radius: 5px;
                         cursor: pointer;
@@ -67,10 +68,11 @@ body {
                     .quantity {
                         background-color: black;
                         color: #fff;
-                        padding: 7px 14px;
+                        padding: 8px 5px;
                         font-size: small;
                         margin-bottom: 5px;
                         border-radius: 5px;
+                        font-size: 10px;
                     }
                     .day {
                         color: #aaa;

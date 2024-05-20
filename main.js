@@ -25,18 +25,25 @@ fetch("data.json")
     day6.textContent = sat;
     day7.textContent = sun;
 
-    prog1.style.height = `${amount1}px`;
-    prog2.style.height = `${amount2}px`;
-    prog3.style.height = `${amount3}px`;
-    prog4.style.height = `${amount4}px`;
-    prog5.style.height = `${amount5}px`;
-    prog6.style.height = `${amount6}px`;
-    prog7.style.height = `${amount7}px`;
+    prog1.style.height = `${amount1}%`;
+    prog2.style.height = `${amount2}%`;
+    prog3.style.height = `${amount3}%`;
+    prog4.style.height = `${amount4}%`;
+    prog5.style.height = `${amount5}%`;
+    prog6.style.height = `${amount6}%`;
+    prog7.style.height = `${amount7}%`;
 
     allProgress.forEach((progress) => {
         progress.addEventListener('mouseover', function () {
-            console.log(progress.clientHeight)
-        })
-    })
+            let span = document.createElement("span");
+            let spanContent = data.filter(obj => obj.day === this.nextElementSibling.textContent)[0];
+            span.textContent = `$${spanContent.amount}`;
+            span.className = 'quantity';
+            this.parentElement.insertBefore(span, this.parentElement.children[0]);
+        });
+        progress.addEventListener("mouseout", function () {
+            this.previousSibling.remove();
+        });
+    });
 });
 
