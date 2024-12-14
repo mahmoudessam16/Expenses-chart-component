@@ -59,7 +59,7 @@ body .component .spending .charts .chart {
 }
 body .component .spending .charts .chart .progress {
   display: block;
-  width: 38px;
+  width: 40px;
   background-color: hsl(10, 79%, 65%);
   border-radius: 5px;
   cursor: pointer;
@@ -71,7 +71,7 @@ body .component .spending .charts .chart .progress:hover {
 body .component .spending .charts .chart .quantity {
   background-color: black;
   color: #fff;
-  padding: 8px 5px;
+  padding: 4px;
   font-size: small;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -121,6 +121,8 @@ body .component .spending .total .left-side .money {
     margin: 30px 10px;
   }
   .component .spending .charts .chart .progress {
-    width: 25px !important;
+    width: 30px !important;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

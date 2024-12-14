@@ -6,6 +6,7 @@ let allProgress = document.querySelectorAll(".progress");
 fetch("data.json")
 .then(res => res.json())
 .then(data => {
+    console.log(data);
     let days = [];
     let progresses = [];
     for (let i = 0; i < data.length; i++) {
